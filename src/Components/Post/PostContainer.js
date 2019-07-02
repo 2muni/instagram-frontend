@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import useInput from '../../Hooks/useInput';
-import { useMutation, useQuery } from 'react-apollo-hooks';
+import { useMutation } from 'react-apollo-hooks';
 import PostPresenter from './PostPresenter';
 import { TOGGLE_LIKE, ADD_COMMENT } from './PostQueries';
-import { ME } from '../../SharedQueries';
 import { toast } from 'react-toastify';
 
 const PostContainer = ({
